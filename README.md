@@ -21,4 +21,4 @@ No VS Code, recomendo instalar as extensões Prettier e Tailwind.
 - [Next.js](https://nextjs.org/docs) - Framework para criar a aplicação em React
 - [shadcn/ui](https://ui.shadcn.com/docs) - Componentes
 - [Tailwind CSS](https://tailwindcss.com/docs/utility-first) - Estilo
-- [Radix] (https://www.radix-ui.com/icons) - Ícones
+- [Radix](https://www.radix-ui.com/icons) - Ícones
