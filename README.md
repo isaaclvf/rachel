@@ -1,36 +1,24 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# Rachel
 
-## Getting Started
+Sistema de biblioteca para leitores e administradores.
 
-First, run the development server:
+## Instalação
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Abra [http://localhost:3000](http://localhost:3000) no navegador para ver o resultado.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+Edite as páginas modificando os arquivos com nome `page.jsx` dentro de `app`. As pastas que contém um arquivo `page.jsx` dentro de `app` correspondem a rotas diferentes. Por exemplo, tente acessar [http://localhost:3000/login](http://localhost:3000/login) ou [http://localhost:3000/home](http://localhost:3000/home). Elas mostram o conteúdo das páginas `app/login/page.jsx` e `app/home/page.jsx` respectivamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## VS Code
+No VS Code, recomendo instalar as extensões Prettier e Tailwind.
 
-## Learn More
+## Sobre as tecnologias utiliziadas
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [Next.js](https://nextjs.org/docs) - Framework para criar a aplicação em React
+- [shadcn/ui](https://ui.shadcn.com/docs) - Componentes
+- [Tailwind CSS](https://tailwindcss.com/docs/utility-first) - Estilo
+- [Radix] (https://www.radix-ui.com/icons) - Ícones
