@@ -46,7 +46,154 @@ const loans = [
 const catSrc =
   "https://i.natgeofe.com/n/548467d8-c5f1-4551-9f58-6817a8d2c45e/NationalGeographic_2572187_square.jpg";
 
-export {
-    loans,
-    catSrc
-};
+const books = [
+  {
+    title: "Dom Casmurro",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "O Alienista",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Quincas Borba",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Memórias Póstumas de Brás Cubas",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Helena",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "A Cartomante",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Esaú e Jacó",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Dom Casmurro",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "O Alienista",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Quincas Borba",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Memórias Póstumas de Brás Cubas",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Helena",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "A Cartomante",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Esaú e Jacó",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Dom Casmurro",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "O Alienista",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Quincas Borba",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Memórias Póstumas de Brás Cubas",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+  {
+    title: "Helena",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "A Cartomante",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "disponível"
+  },
+  {
+    title: "Esaú e Jacó",
+    author: "Machado de Assis",
+    edition: "2",
+    isbn: "123456",
+    status: "indisponível"
+  },
+];
+
+export { loans, catSrc, books };

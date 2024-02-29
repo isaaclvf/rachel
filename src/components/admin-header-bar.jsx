@@ -10,31 +10,12 @@ import {
 import Link from "next/link";
 import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import { BellIcon, SearchIcon } from "lucide-react";
-import {
-  DropdownMenu,
-  DropdownMenuContent,
-  DropdownMenuTrigger,
-} from "@/components/ui/dropdown-menu";
 
-export default function HeaderBar() {
+export default function AdminHeaderBar() {
   return (
     <header className="flex h-16 items-center justify-between border-b-[1px] px-4">
       <Link href="/home">Logo</Link>
       <div className="flex flex-row gap-4">
-        <Link href="/search">
-          <SearchIcon></SearchIcon>
-        </Link>
-        <DropdownMenu>
-          <DropdownMenuTrigger asChild>
-            <BellIcon className="hover:cursor-pointer"></BellIcon>
-          </DropdownMenuTrigger>
-          <DropdownMenuContent align="end">
-            <div className="p-4">
-              <p>O livro que você reservou está disponível</p>
-            </div>
-          </DropdownMenuContent>
-        </DropdownMenu>
         <Sheet>
           <SheetTrigger>
             <HamburgerMenuIcon className="h-6 w-6"></HamburgerMenuIcon>
@@ -42,16 +23,15 @@ export default function HeaderBar() {
           <SheetContent className="flex flex-col justify-between">
             <div className="flex flex-col gap-4">
               <SheetHeader>
-                <SheetTitle>Navegação</SheetTitle>
+                <SheetTitle>Admin</SheetTitle>
                 <SheetDescription>
-                  Explore diferentes áreas da platafoma.
+                  Gerencie os dados da biblioteca
                 </SheetDescription>
               </SheetHeader>
 
-              <Link href="/wishlist">Lista de desejos</Link>
-              <Link href="/reservations">Reservas</Link>
-              <Link href="/profile">Seu perfil</Link>
-              <Link href="/about">Sobre</Link>
+              <Link href="/admin/books">Livros</Link>
+              <Link href="/admin/loans">Empréstimos</Link>
+              <Link href="/admin/users">Usuários</Link>
             </div>
             <SheetFooter>
               <Button>Sair</Button>
