@@ -39,11 +39,11 @@ export default function HeaderBar() {
           <SheetTrigger>
             <HamburgerMenuIcon className="h-6 w-6"></HamburgerMenuIcon>
           </SheetTrigger>
-          <SheetContent className="flex flex-col justify-between">
+          <SheetContent className="flex flex-col justify-between bg-[#113535] text-white border-0 ">
             <div className="flex flex-col gap-4">
               <SheetHeader>
-                <SheetTitle>Navegação</SheetTitle>
-                <SheetDescription>
+                <SheetTitle className=" text-white" >Navegação</SheetTitle>
+                <SheetDescription className="text-white" >
                   Explore diferentes áreas da platafoma.
                 </SheetDescription>
               </SheetHeader>
@@ -54,7 +54,7 @@ export default function HeaderBar() {
               <Link href="/about">Sobre</Link>
             </div>
             <SheetFooter>
-              <Button>Sair</Button>
+              <Button className="bg-[#FF2E2E] hover:bg-red-800">Sair</Button>
             </SheetFooter>
           </SheetContent>
         </Sheet>
