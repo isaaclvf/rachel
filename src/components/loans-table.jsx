@@ -40,10 +40,10 @@ export default function LoansTable() {
             <TableCell>{loan.dueDate}</TableCell>
             <TableCell className="text-center">
               <Dialog>
-                <DialogTrigger className="rounded-sm bg-black text-white">
-                  Renovar ({loan.renewals}/10)
+                <DialogTrigger className="p-2 rounded-sm bg-[#113535] text-white">
+                  Renovar
                 </DialogTrigger>
-                <DialogContent>
+                <DialogContent className="bg-[#FFF9C7]">
                   <DialogHeader>
                     <DialogTitle>Renovar empréstimo</DialogTitle>
                     <DialogDescription>
@@ -53,7 +53,7 @@ export default function LoansTable() {
 
                   <p>Renovar empréstimo do livro {loan.title}?</p>
                   <DialogFooter>
-                    <Button type="submit">Confirmar</Button>
+                    <Button className="bg-[#113535]" type="submit">Confirmar</Button>
                   </DialogFooter>
                 </DialogContent>
               </Dialog>

@@ -21,10 +21,10 @@ export default function ReservationsPage() {
     <>
       <HeaderBar />
       <main className="flex min-h-screen flex-col items-center gap-4 py-24">
-        <Card>
+        <Card className="bg-[#F5F5F5]">
           <CardHeader className="border-b-[1px] py-4">
             <CardTitle>Reservas</CardTitle>
-            <CardDescription>
+            <CardDescription className="text-black">
               Livros que você reservou na biblioteca
             </CardDescription>
           </CardHeader>

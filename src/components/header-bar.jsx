@@ -19,15 +19,17 @@ import {
 
 export default function HeaderBar() {
   return (
-    <header className="flex h-16 items-center justify-between border-b-[1px] px-4">
-      <Link href="/home">Logo</Link>
+    <header className="flex h-16 items-center justify-between border-b-[1px] px-4 bg-[#A0DFC7]">
+      <Link href="/home">
+        <img src="/logoNormal.svg" alt="" />
+      </Link>
       <div className="flex flex-row gap-4">
         <Link href="/search">
-          <SearchIcon></SearchIcon>
+          <SearchIcon className="text-[#113535]"></SearchIcon>
         </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <BellIcon className="hover:cursor-pointer"></BellIcon>
+            <BellIcon className="hover:cursor-pointer text-[#113535]"></BellIcon>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <div className="p-4">
@@ -37,7 +39,7 @@ export default function HeaderBar() {
         </DropdownMenu>
         <Sheet>
           <SheetTrigger>
-            <HamburgerMenuIcon className="h-6 w-6"></HamburgerMenuIcon>
+            <HamburgerMenuIcon className="h-6 w-6 text-[#113535]"></HamburgerMenuIcon>
           </SheetTrigger>
           <SheetContent className="flex flex-col justify-between bg-[#113535] text-white border-0 ">
             <div className="flex flex-col gap-4">
