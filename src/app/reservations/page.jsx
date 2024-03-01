@@ -32,7 +32,7 @@ export default function ReservationsPage() {
             <Dialog>
               <DialogTrigger>
                 <div className="flex gap-4">
-                  <CrossCircledIcon className="h-6 w-6"></CrossCircledIcon>
+                  <CrossCircledIcon className="h-6 w-6 text-[#113535]"></CrossCircledIcon>
                   <div>
                     <p className="text-left text-sm font-medium leading-none">
                       Memórias Póstumas de Brás Cubas
@@ -56,7 +56,7 @@ export default function ReservationsPage() {
             <Dialog>
               <DialogTrigger>
                 <div className="flex gap-4">
-                  <CheckCircledIcon className="h-6 w-6"></CheckCircledIcon>
+                  <CheckCircledIcon className="h-6 w-6 text-[#113535]"></CheckCircledIcon>
                   <div>
                     <p className="text-left text-sm font-medium leading-none">
                       São Bernardo
