@@ -52,19 +52,19 @@ export function DataTable({ columns, data }) {
   });
 
   return (
-    <div className="mx-auto my-0 max-w-[80ch]">
-      <div className="flex items-center py-4">
+    <div className="mx-auto my-0 max-w-[80ch] ">
+      <div className="flex items-center py-4 ">
         <Input
           placeholder="Filtre por título..."
           value={table.getColumn("title")?.getFilterValue() ?? ""}
           onChange={(event) =>
             table.getColumn("title")?.setFilterValue(event.target.value)
           }
-          className="max-w-sm"
+          className="max-w-sm bg-[#F5F5F5]"
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto">
+            <Button variant="outline" className="ml-auto bg-[#F5F5F5]">
               Colunas
             </Button>
           </DropdownMenuTrigger>
@@ -78,7 +78,7 @@ export function DataTable({ columns, data }) {
                 return (
                   <DropdownMenuCheckboxItem
                     key={column.id}
-                    className="capitalize"
+                    className="capitalize "
                     checked={column.getIsVisible()}
                     onCheckedChange={(value) =>
                       column.toggleVisibility(!!value)
@@ -91,7 +91,7 @@ export function DataTable({ columns, data }) {
           </DropdownMenuContent>
         </DropdownMenu>
       </div>
-      <div className="rounded-md border ">
+      <div className="rounded-md border bg-[#F5F5F5] ">
         <Table>
           <TableHeader>
             {table.getHeaderGroups().map((headerGroup) => (
@@ -141,10 +141,11 @@ export function DataTable({ columns, data }) {
           </TableBody>
         </Table>
       </div>
-      <div className="flex items-center justify-end space-x-2 py-4">
+      <div className="flex items-center justify-end space-x-2 py-4 ">
         <Button
           variant="outline"
           size="sm"
+          className="bg-[#F5F5F5]"
           onClick={() => table.previousPage()}
           disabled={!table.getCanPreviousPage()}
         >
@@ -153,6 +154,7 @@ export function DataTable({ columns, data }) {
         <Button
           variant="outline"
           size="sm"
+          className="bg-[#F5F5F5]"
           onClick={() => table.nextPage()}
           disabled={!table.getCanNextPage()}
         >
