@@ -45,7 +45,7 @@ export default function AboutPage() {
           <div className="flex w-full lg:w-2/4 flex-wrap justify-center gap-3">
             <div
               id="card"
-              className="flex w-full items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex items-center rounded-lg border border-black p-3 w-4/5"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex w-full items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex items-center rounded-lg border border-black p-3 w-4/5"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex w-full items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex items-center rounded-lg border border-black p-3 w-4/5"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -114,7 +114,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex w-full items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex items-center rounded-lg border border-black p-3 w-4/5"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
