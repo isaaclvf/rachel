@@ -196,4 +196,23 @@ const books = [
   },
 ];
 
-export { loans, catSrc, books };
+const users = [
+  {
+    tuition: "2000101010",
+    name: "Leonardo Pereira Silva",
+  },
+  {
+    tuition: "2000101011",
+    name: "Riquelme Jatay Ribeiro Scarcela Bezerra",
+  },
+  {
+    tuition: "2000101012",
+    name: "Isaac Alves",
+  },
+  {
+    tuition: "2000101013",
+    name: "Rafael Cunha",
+  }
+];
+
+export { loans, catSrc, books, users };
