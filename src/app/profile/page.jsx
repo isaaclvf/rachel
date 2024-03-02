@@ -1,6 +1,8 @@
 import HeaderBar from "@/components/header-bar";
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { catSrc } from "@/data/data";
+import { Pencil1Icon } from "@radix-ui/react-icons";
+import Link from "next/link";
 
 export default function ProfilePage() {
   return (
@@ -14,7 +16,15 @@ export default function ProfilePage() {
         </div>
         
         <div className="rounded-t-[50px] flex justify-center h-screen bg-[#113535] ">
-          <h1 className="py-12 text-white" > Username </h1>
+          <div className="flex flex-row gap-2">
+            <h1 className="py-12 text-white" > Username </h1>
+            <Link href="/profileedit">
+            <Pencil1Icon className="h-5 w-5 text-white my-12"></Pencil1Icon>
+            </Link>
+            
+          </div>
+          
+          
         </div>
       </main>
     </>
