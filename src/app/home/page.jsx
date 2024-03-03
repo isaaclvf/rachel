@@ -16,7 +16,7 @@ export default function HomePage() {
             <AvatarImage src={catSrc} alt="cat" />
             <AvatarFallback>CN</AvatarFallback>
           </Avatar>
-          <h1>Olá, username!</h1>
+          <h1 className="text-xl font-serif">Olá, username!</h1>
         </div>
         <Alert className="bg-[#FFF9C7]">
           <CheckIcon className="h-4 w-4" />

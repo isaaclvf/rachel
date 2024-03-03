@@ -1,13 +1,8 @@
 import { useState } from 'react';
 import { Button } from "@/components/ui/button";
 import HeaderBar from "@/components/header-bar";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import WishlistComponet from "./wishlist";
+
 
 
 
@@ -28,6 +23,7 @@ export default function WishlistPage() {
     <>
       <HeaderBar />
       <main className="flex min-h-screen flex-col items-center gap-4 py-24">
+<<<<<<< HEAD
         <Card className="bg-[#F5F5F5]"> 
           <CardHeader className="border-b-[1px] py-4">
             <CardTitle className="font-serif">Lista de desejos</CardTitle>
@@ -45,6 +41,9 @@ export default function WishlistPage() {
         ))}
           </CardContent>
         </Card>
+=======
+        <WishlistComponet></WishlistComponet>
+>>>>>>> 745395fda08ae406434240b98c0b628d7b8157f5
       </main>
     </>
   );
