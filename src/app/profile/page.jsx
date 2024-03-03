@@ -51,114 +51,162 @@ export default function ProfilePage() {
               <DialogTrigger asChild>
                 <Pencil1Icon className="my-12 h-6 w-6 text-black"></Pencil1Icon>
               </DialogTrigger>
-              <DialogContent className="bg-[#F5F5F5] sm:max-w-[425px]">
-                <DialogHeader>
-                  <DialogTitle>Edite o Perfil</DialogTitle>
-                  <DialogDescription>
-                    Clique em salvar quando terminar.
-                  </DialogDescription>
-                </DialogHeader>
-                <div className="grid gap-4 py-4">
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">Rua</Label>
-                    <Input
-                      id="rua"
+              <DialogContent className="flex h-4/5 w-3/4 flex-col overflow-scroll">
+            <DialogHeader>
+              <DialogTitle className="font-serif text-2xl">
+                Cadastro de usuário
+              </DialogTitle>
+              <DialogDescription>Preencha todos os campos.</DialogDescription>
+            </DialogHeader>
+            <form method="post">
+              <fieldset>
+                <legend legend className="font-serif text-lg font-bold">
+                  Dados Pessoais
+                </legend>
+                <ul>
+                  <li>
+                    <label for="name">Nome:</label>
+                    <input
                       type="text"
-                      value="Rua"
-                      className="col-span-3"
+                      value="username"
+                      id="name"
+                      name="name"
+                      className="h-8 w-full rounded-md border border-input p-1"
                     />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="number" className="text-right">
-                      Numero
-                    </Label>
-                    <Input
-                      id="numero"
+                  </li>
+                  <li className="mt-2">
+                    <label for="avatar">Imagem de perfil:</label>
+                    <input
+                      type="file"
+                      id="avatar"
+                      name="avatar"
+                      className="h-8 w-full rounded-md border border-input p-1 text-sm"
+                    />
+                  </li>
+                  <span className="mt-2 flex gap-2">
+                    <li className="flex w-full flex-col">
+                      <label for="birthdate">Nascimento:</label>
+                      <input
+                        type="date"
+                        value="03/05/2003"
+                        id="birthdate"
+                        name="birthdate"
+                        className="h-8 rounded-md border border-input p-1"
+                      />
+                    </li>
+                    <li className="flex w-full flex-col">
+                      <label for="gender">Gênero:</label>
+                      <select
+                        name="gender"
+                        value="Outro"
+                        id="gender"
+                        className="h-8 rounded-md border border-input p-1"
+                      >
+                        <option value="male">Masculino</option>
+                        <option value="female">Feminino</option>
+                        <option value="other">Outro</option>
+                      </select>
+                    </li>
+                  </span>
+                  <li className="mt-2">
+                    <label for="cpf">CPF:</label>
+                    <input
                       type="number"
-                      value="Numero"
-                      className="col-span-3"
+                      value="12345678910"
+                      id="cpf"
+                      name="cpf"
+                      className="h-8 w-full rounded-md border border-input p-1"
                     />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">Bairro</Label>
-                    <Input
-                      id="bairro"
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset className="mt-4">
+                <legend legend className="font-serif text-lg font-bold">
+                  Endereço
+                </legend>
+                <ul>
+                  <li>
+                    <label for="adress-street">Logradouro:</label>
+                    <input
+                      type="text"
+                      value="Rua Logadouro"
+                      id="adress-street"
+                      name="adress-street"
+                      className="h-8 w-full rounded-md border border-input p-1"
+                    />
+                  </li>
+                  <li className="flex w-full flex-col mt-2">
+                    <label for="adress-number">Número:</label>
+                    <input
+                      type="number"
+                      value="19"
+                      id="adress-number"
+                      name="adress-number"
+                      className="h-8 rounded-md border border-input p-1"
+                    />
+                  </li>
+                  <li className="flex w-full flex-col mt-2">
+                    <label for="adress-district">Bairro:</label>
+                    <input
                       type="text"
                       value="Bairro"
-                      className="col-span-3"
+                      id="adress-district"
+                      name="adress-district"
+                      className="h-8 rounded-md border border-input p-1"
                     />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">Cidade</Label>
-                    <Input
-                      id="Cidade"
+                  </li>
+                  <li className="mt-2">
+                    <label for="adress-complement">Complemento:</label>
+                    <input
+                      type="text"
+                      value="Complemento"
+                      id="adress-complement"
+                      name="adress-complement"
+                      className="h-8 w-full rounded-md border border-input p-1"
+                    />
+                  </li>
+                  <li className="mt-2">
+                    <label for="adress-city">Cidade:</label>
+                    <input
                       type="text"
                       value="Cidade"
-                      className="col-span-3"
+                      id="adress-city"
+                      name="adress-city"
+                      className="h-8 w-full rounded-md border border-input p-1"
                     />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="number" className="text-right">
-                      CEP
-                    </Label>
-                    <Input
-                      id="CEP"
-                      type="number"
-                      value="CEP"
-                      className="col-span-3"
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="number" className="text-right">
-                      Telefone
-                    </Label>
-                    <Input
-                      id="Telefone"
-                      type="tel"
-                      value="Telefone"
-                      className="col-span-3"
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="number" className="text-right">
-                      UF
-                    </Label>
-                    <Input
-                      id="UF"
-                      type="text"
-                      value="UF"
-                      className="col-span-3"
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="number" className="text-right">
-                      Nascimento
-                    </Label>
-                    <Input
-                      id="nascimento"
-                      type="date"
-                      value="Nascimento"
-                      className="col-span-3"
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label htmlFor="username" className="text-right">
-                      E-mail
-                    </Label>
-                    <Input
-                      id="email"
+                  </li>
+                </ul>
+              </fieldset>
+              <fieldset className="mt-4">
+                <legend legend className="font-serif text-lg font-bold">
+                  Contato
+                </legend>
+                <ul>
+                  <li>
+                    <label for="email">E-mail:</label>
+                    <input
                       type="email"
-                      value="email"
-                      className="col-span-3"
+                      value="email@email.com"
+                      id="email"
+                      name="email"
+                      className="h-8 w-full rounded-md border border-input p-1"
                     />
-                  </div>
-                </div>
-                <DialogFooter>
-                  <Button type="submit" className="bg-[#113535]">
-                    Salvar
-                  </Button>
-                </DialogFooter>
-              </DialogContent>
+                  </li>
+                  <li className="flex w-full flex-col">
+                    <label for="phone">Telefone:</label>
+                    <input
+                      type="tel"
+                      value="88912345678"
+                      id="phone"
+                      name="phone"
+                      className="h-8 w-full rounded-md border border-input p-1"
+                    />
+                  </li>
+                </ul>
+              </fieldset>
+              <Button className="mt-6 bg-[#113535] w-full">Salvar cadastro</Button>
+            </form>
+          </DialogContent>
             </Dialog>
           </div>
 
