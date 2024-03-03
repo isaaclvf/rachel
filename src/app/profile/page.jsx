@@ -37,7 +37,7 @@ export default function ProfilePage() {
     <>
       <HeaderBar />
       <main className="bg-[#F5F5F5]">
-        <img className="absolute z-0" src="/frame.png" alt="Imagem de fundo" />
+        <img className="absolute z-0" src="/Frame.png" alt="Imagem de fundo" />
         <div className="relative z-10 flex w-full translate-y-8 justify-center">
           <Avatar className="h-36 w-36  border-4 border-white ">
             <AvatarImage className="" src={catSrc} />
