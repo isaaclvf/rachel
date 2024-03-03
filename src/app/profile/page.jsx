@@ -15,6 +15,13 @@ import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import {
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import {
   Dialog,
   DialogContent,
   DialogDescription,
@@ -43,11 +50,11 @@ export default function ProfilePage() {
               <DialogTrigger asChild>
                 <Pencil1Icon className="my-12 h-6 w-6 text-white"></Pencil1Icon>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px]">
+              <DialogContent className="sm:max-w-[425px] bg-[#F5F5F5]">
                 <DialogHeader>
                   <DialogTitle>Edite o Perfil</DialogTitle>
                   <DialogDescription>
-                    Faça mudanças no perfil aqui. Clique em salvar quando terminar.
+                    Clique em salvar quando terminar.
                   </DialogDescription>
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
@@ -81,17 +88,6 @@ export default function ProfilePage() {
                       id="bairro"
                       type="text"
                       value="Bairro"
-                      className="col-span-3"
-                    />
-                  </div>
-                  <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">
-                      Complemento
-                    </Label>
-                    <Input
-                      id="complemento"
-                      type="text"
-                      value="Complemento"
                       className="col-span-3"
                     />
                   </div>
@@ -163,22 +159,53 @@ export default function ProfilePage() {
                   </div>
                 </div>
                 <DialogFooter>
-                  <Button type="submit">Salvar</Button>
+                  <Button type="submit" className="bg-[#113535]">Salvar</Button>
                 </DialogFooter>
               </DialogContent>
             </Dialog>
           </div>
 
-          <div className=" px-12 ">
+          <div className=" px-5 ">
+          <Card className="bg-[#F5F5F5]"> 
+          <CardHeader className="border-b-[1px] py-4">
+            <CardTitle className="font-serif">Informações</CardTitle>
+          </CardHeader>
+          <CardContent className="flex flex-row flex-wrap justify-between gap-4 py-4">
+            <div>
+              <p className="text-sm font-medium leading-none">Rua</p>
+              <p className="text-sm text-muted-foreground">Rua</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">Número</p>
+              <p className="text-sm text-muted-foreground">Número</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">Bairro</p>
+              <p className="text-sm text-muted-foreground">Bairro</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">Cidade</p>
+              <p className="text-sm text-muted-foreground">Cidade</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">Telefone</p>
+              <p className="text-sm text-muted-foreground">Telefone</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">UF</p>
+              <p className="text-sm text-muted-foreground">UF</p>
+            </div>
+            <div>
+              <p className="text-sm font-medium leading-none">Nascimento</p>
+              <p className="text-sm text-muted-foreground">Nascimento</p>
+            </div>
+            
+          </CardContent>
+        </Card>
+          </div>
+
+          <div className=" px-5 ">
             <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-1">
-                <AccordionTrigger className="border-b-white text-white">
-                  Informações
-                </AccordionTrigger>
-                <AccordionContent className="text-white">
-                  <Reservation />
-                </AccordionContent>
-              </AccordionItem>
               <AccordionItem value="item-2">
                 <AccordionTrigger className="border-b-white text-white">
                   Reservas
