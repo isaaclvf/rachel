@@ -215,4 +215,43 @@ const users = [
   }
 ];
 
-export { loans, catSrc, books, users };
+const currentLoans = [
+  {
+    username: "Rafael Cunha",
+    userId: "2000101013",
+    bookTitle: "O Alienista, Machado de Assis",
+    bookId: "1",
+    dueDate: "2024-03-13",
+    partialFine: 0,
+    renewals: 0,
+  },
+  {
+    username: "Isaac Alves",
+    userId: "2000101012",
+    bookTitle: "Macunaíma, Mário de Andrade",
+    bookId: "2",
+    dueDate: "2024-02-20",
+    partialFine: 5.35,
+    renewals: 0,
+  },
+  {
+    username: "Riquelme Jatay Ribeiro Scarcela Bezerra",
+    userId: "2000101011",
+    bookTitle: "IT A Coisa, Stephen King",
+    bookId: "3",
+    dueDate: "2024-03-16",
+    partialFine: 0,
+    renewals: 3,
+  },
+  {
+    username: "Leonardo Pereira Silva",
+    userId: "2000101010",
+    bookTitle: "O Pequeno Príncipe, Antoine de Saint-Exupéry",
+    bookId: "4",
+    dueDate: "2024-03-03",
+    partialFine: 0,
+    renewals: 1,
+  },
+]
+
+export { loans, catSrc, books, users, currentLoans };
