@@ -43,7 +43,7 @@ export default function ProfilePage() {
           </Avatar>
         </div>
 
-        <div className="h-screen  grid-flow-col-dense  justify-center rounded-t-[50px] bg-[#FFF9C7]">
+        <div className="h-screen  grid-flow-col-dense  justify-center rounded-t-[50px] bg-[url('/public/rachelF.png')]">
           <div className="mb-0 flex flex-row justify-center gap-2">
             <h1 className="py-12 text-black"> Username </h1>
 
