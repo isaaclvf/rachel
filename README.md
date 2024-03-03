@@ -22,3 +22,24 @@ No VS Code, recomendo instalar as extensões Prettier e Tailwind.
 - [shadcn/ui](https://ui.shadcn.com/docs) - Componentes
 - [Tailwind CSS](https://tailwindcss.com/docs/utility-first) - Estilo
 - [Radix](https://www.radix-ui.com/icons) - Ícones
+
+## Motivação do Projeto e Funcionalidades Principais
+
+- Solução Geral:
+  
+Criar uma plataforma atual para organização de empréstimos de livros, uma Alternativa para o Meu Pergamum.
+- Funcionalidades:
+
+Como Usuário: Pesquisar livros no catálogo; Renovar os livros em sua posse; Adicionar livros à sua lista de desejos; Fazer reserva; Editar seu perfil.
+
+Como administrador: Realizar reservas; Adicionar usuários; Cadastrar livro; Averiguar Empréstimos;
+
+- Diferencial:
+
+Responsividade, facilidade de navegação e modernidade no design.
+
+- Publico Alvo:
+
+Bibliotecarios; Administradores da Biblioteca da UFCA; Comunidade Acadêmica da UFCA.
+
+
