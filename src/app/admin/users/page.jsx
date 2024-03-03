@@ -4,11 +4,6 @@ import { columns } from "./columns";
 import { DataTable } from "./data-table";
 import { PlusCircledIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
-import {
-  Collapsible,
-  CollapsibleContent,
-  CollapsibleTrigger,
-} from "@/components/ui/collapsible"
 
 
 
@@ -21,6 +16,7 @@ export default function SearchPage() {
           <PlusCircledIcon className="mr-2 h-4 w-4" /> Cadastrar novo usuário
         </Button>
         <DataTable columns={columns} data={users} />
+
       </main>
     </>
   );

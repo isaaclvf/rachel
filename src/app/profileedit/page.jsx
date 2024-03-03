@@ -15,7 +15,7 @@ export default function ProfileeditPage(params) {
   return (
     <>
       <HeaderBar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-16 bg-[#F5F5F5]" >
+      <main className="flex min-h-screen flex-col items-center justify-between p-5 bg-[#F5F5F5]" >
         <Card className="bg-[#FFF9C7]">
           <CardHeader>
             <CardTitle>Dados Pessoais</CardTitle>
@@ -36,6 +36,15 @@ export default function ProfileeditPage(params) {
               <Label >Número</Label>
               <Input
                 type="number"
+                autoComplete="off"
+                className="bg-white"
+              />
+            </CardContent>
+            <CardContent className="grid w-full max-w-sm items-center gap-1.5">
+              <Label htmlFor="password">Matrícula</Label>
+              <Input
+                id="password"
+                type="password"
                 autoComplete="off"
                 className="bg-white"
               />
