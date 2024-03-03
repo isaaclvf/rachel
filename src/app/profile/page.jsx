@@ -37,13 +37,14 @@ export default function ProfilePage() {
     <>
       <HeaderBar />
       <main className="bg-[#F5F5F5]">
-        <div className="flex w-full translate-y-8 justify-center">
+        <img className="absolute z-0" src="/frame.png" alt="Imagem de fundo" />
+        <div className="relative z-10 flex w-full translate-y-8 justify-center">
           <Avatar className="h-36 w-36  border-4 border-white ">
             <AvatarImage className="" src={catSrc} />
           </Avatar>
         </div>
 
-        <div className="h-screen  grid-flow-col-dense  justify-center rounded-t-[50px] bg-[#FFF9C7]">
+        <div className="relative h-screen  grid-flow-col-dense  justify-center rounded-t-[50px] bg-[#FFF9C7]">
           <div className="mb-0 flex flex-row justify-center gap-2">
             <h1 className="py-12 text-black"> Username </h1>
 
@@ -52,161 +53,165 @@ export default function ProfilePage() {
                 <Pencil1Icon className="my-12 h-6 w-6 text-black"></Pencil1Icon>
               </DialogTrigger>
               <DialogContent className="flex h-4/5 w-3/4 flex-col overflow-scroll">
-            <DialogHeader>
-              <DialogTitle className="font-serif text-2xl">
-                Cadastro de usuário
-              </DialogTitle>
-              <DialogDescription>Preencha todos os campos.</DialogDescription>
-            </DialogHeader>
-            <form method="post">
-              <fieldset>
-                <legend legend className="font-serif text-lg font-bold">
-                  Dados Pessoais
-                </legend>
-                <ul>
-                  <li>
-                    <label for="name">Nome:</label>
-                    <input
-                      type="text"
-                      value="username"
-                      id="name"
-                      name="name"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="mt-2">
-                    <label for="avatar">Imagem de perfil:</label>
-                    <input
-                      type="file"
-                      id="avatar"
-                      name="avatar"
-                      className="h-8 w-full rounded-md border border-input p-1 text-sm"
-                    />
-                  </li>
-                  <span className="mt-2 flex gap-2">
-                    <li className="flex w-full flex-col">
-                      <label for="birthdate">Nascimento:</label>
-                      <input
-                        type="date"
-                        value="03/05/2003"
-                        id="birthdate"
-                        name="birthdate"
-                        className="h-8 rounded-md border border-input p-1"
-                      />
-                    </li>
-                    <li className="flex w-full flex-col">
-                      <label for="gender">Gênero:</label>
-                      <select
-                        name="gender"
-                        value="Outro"
-                        id="gender"
-                        className="h-8 rounded-md border border-input p-1"
-                      >
-                        <option value="male">Masculino</option>
-                        <option value="female">Feminino</option>
-                        <option value="other">Outro</option>
-                      </select>
-                    </li>
-                  </span>
-                  <li className="mt-2">
-                    <label for="cpf">CPF:</label>
-                    <input
-                      type="number"
-                      value="12345678910"
-                      id="cpf"
-                      name="cpf"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset className="mt-4">
-                <legend legend className="font-serif text-lg font-bold">
-                  Endereço
-                </legend>
-                <ul>
-                  <li>
-                    <label for="adress-street">Logradouro:</label>
-                    <input
-                      type="text"
-                      value="Rua Logadouro"
-                      id="adress-street"
-                      name="adress-street"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="flex w-full flex-col mt-2">
-                    <label for="adress-number">Número:</label>
-                    <input
-                      type="number"
-                      value="19"
-                      id="adress-number"
-                      name="adress-number"
-                      className="h-8 rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="flex w-full flex-col mt-2">
-                    <label for="adress-district">Bairro:</label>
-                    <input
-                      type="text"
-                      value="Bairro"
-                      id="adress-district"
-                      name="adress-district"
-                      className="h-8 rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="mt-2">
-                    <label for="adress-complement">Complemento:</label>
-                    <input
-                      type="text"
-                      value="Complemento"
-                      id="adress-complement"
-                      name="adress-complement"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="mt-2">
-                    <label for="adress-city">Cidade:</label>
-                    <input
-                      type="text"
-                      value="Cidade"
-                      id="adress-city"
-                      name="adress-city"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                </ul>
-              </fieldset>
-              <fieldset className="mt-4">
-                <legend legend className="font-serif text-lg font-bold">
-                  Contato
-                </legend>
-                <ul>
-                  <li>
-                    <label for="email">E-mail:</label>
-                    <input
-                      type="email"
-                      value="email@email.com"
-                      id="email"
-                      name="email"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                  <li className="flex w-full flex-col">
-                    <label for="phone">Telefone:</label>
-                    <input
-                      type="tel"
-                      value="88912345678"
-                      id="phone"
-                      name="phone"
-                      className="h-8 w-full rounded-md border border-input p-1"
-                    />
-                  </li>
-                </ul>
-              </fieldset>
-              <Button className="mt-6 bg-[#113535] w-full">Salvar cadastro</Button>
-            </form>
-          </DialogContent>
+                <DialogHeader>
+                  <DialogTitle className="font-serif text-2xl">
+                    Cadastro de usuário
+                  </DialogTitle>
+                  <DialogDescription>
+                    Preencha todos os campos.
+                  </DialogDescription>
+                </DialogHeader>
+                <form method="post">
+                  <fieldset>
+                    <legend legend className="font-serif text-lg font-bold">
+                      Dados Pessoais
+                    </legend>
+                    <ul>
+                      <li>
+                        <label for="name">Nome:</label>
+                        <input
+                          type="text"
+                          value="username"
+                          id="name"
+                          name="name"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="mt-2">
+                        <label for="avatar">Imagem de perfil:</label>
+                        <input
+                          type="file"
+                          id="avatar"
+                          name="avatar"
+                          className="h-8 w-full rounded-md border border-input p-1 text-sm"
+                        />
+                      </li>
+                      <span className="mt-2 flex gap-2">
+                        <li className="flex w-full flex-col">
+                          <label for="birthdate">Nascimento:</label>
+                          <input
+                            type="date"
+                            value="03/05/2003"
+                            id="birthdate"
+                            name="birthdate"
+                            className="h-8 rounded-md border border-input p-1"
+                          />
+                        </li>
+                        <li className="flex w-full flex-col">
+                          <label for="gender">Gênero:</label>
+                          <select
+                            name="gender"
+                            value="Outro"
+                            id="gender"
+                            className="h-8 rounded-md border border-input p-1"
+                          >
+                            <option value="male">Masculino</option>
+                            <option value="female">Feminino</option>
+                            <option value="other">Outro</option>
+                          </select>
+                        </li>
+                      </span>
+                      <li className="mt-2">
+                        <label for="cpf">CPF:</label>
+                        <input
+                          type="number"
+                          value="12345678910"
+                          id="cpf"
+                          name="cpf"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset className="mt-4">
+                    <legend legend className="font-serif text-lg font-bold">
+                      Endereço
+                    </legend>
+                    <ul>
+                      <li>
+                        <label for="adress-street">Logradouro:</label>
+                        <input
+                          type="text"
+                          value="Rua Logadouro"
+                          id="adress-street"
+                          name="adress-street"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="mt-2 flex w-full flex-col">
+                        <label for="adress-number">Número:</label>
+                        <input
+                          type="number"
+                          value="19"
+                          id="adress-number"
+                          name="adress-number"
+                          className="h-8 rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="mt-2 flex w-full flex-col">
+                        <label for="adress-district">Bairro:</label>
+                        <input
+                          type="text"
+                          value="Bairro"
+                          id="adress-district"
+                          name="adress-district"
+                          className="h-8 rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="mt-2">
+                        <label for="adress-complement">Complemento:</label>
+                        <input
+                          type="text"
+                          value="Complemento"
+                          id="adress-complement"
+                          name="adress-complement"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="mt-2">
+                        <label for="adress-city">Cidade:</label>
+                        <input
+                          type="text"
+                          value="Cidade"
+                          id="adress-city"
+                          name="adress-city"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <fieldset className="mt-4">
+                    <legend legend className="font-serif text-lg font-bold">
+                      Contato
+                    </legend>
+                    <ul>
+                      <li>
+                        <label for="email">E-mail:</label>
+                        <input
+                          type="email"
+                          value="email@email.com"
+                          id="email"
+                          name="email"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                      <li className="flex w-full flex-col">
+                        <label for="phone">Telefone:</label>
+                        <input
+                          type="tel"
+                          value="88912345678"
+                          id="phone"
+                          name="phone"
+                          className="h-8 w-full rounded-md border border-input p-1"
+                        />
+                      </li>
+                    </ul>
+                  </fieldset>
+                  <Button className="mt-6 w-full bg-[#113535]">
+                    Salvar cadastro
+                  </Button>
+                </form>
+              </DialogContent>
             </Dialog>
           </div>
 
@@ -274,7 +279,7 @@ export default function ProfilePage() {
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
