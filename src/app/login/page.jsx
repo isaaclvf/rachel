@@ -12,7 +12,7 @@ import Link from "next/link";
 
 export default function Login() {
   return (
-    <main className="bg- flex min-h-screen flex-col items-center justify-between p-24">
+    <main className="bg- flex min-h-screen flex-col items-center justify-between p-12 lg:p-24">
       <img className="pb-9" src="logoNormal.svg" alt="logoNormal" />
       <Card className="bg-[#A0DFC7]">
         <CardHeader>
