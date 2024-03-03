@@ -2,6 +2,7 @@ import AdminHeaderBar from "@/components/admin-header-bar";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
 import { books } from "@/data/data";
+import Footer from "@/components/footer";
 
 
 export default function BooksAdminPage() {
@@ -12,6 +13,7 @@ export default function BooksAdminPage() {
       <DataTable columns={columns} data={books} />
       
       </main>
+      <Footer/>
     </>
   );
 }

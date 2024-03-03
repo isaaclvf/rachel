@@ -8,12 +8,19 @@ import {
 } from "@/components/ui/card";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
+import Image from "next/image";
 import Link from "next/link";
 
 export default function Login() {
   return (
     <main className="bg- flex min-h-screen flex-col items-center justify-between p-12 lg:p-24">
-      <img className="pb-9" src="logoNormal.svg" alt="logoNormal" />
+      <Image
+        width={167}
+        height={39}
+        className="pb-9"
+        src="logoNormal.svg"
+        alt="logoNormal"
+      />
       <Card className="bg-[#A0DFC7]">
         <CardHeader>
           <CardTitle>Bem-vindo!</CardTitle>
@@ -55,7 +62,9 @@ export default function Login() {
           </CardContent>
         </form>
       </Card>
-      <Link href="/admin/login" className="py-4">Sou administrador</Link>
+      <Link href="/admin/login" className="py-4">
+        Sou administrador
+      </Link>
     </main>
   );
 }
