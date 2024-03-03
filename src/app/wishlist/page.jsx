@@ -1,3 +1,5 @@
+import { useState } from 'react';
+import { Button } from "@/components/ui/button";
 import HeaderBar from "@/components/header-bar";
 import {
   Card,
@@ -7,7 +9,21 @@ import {
   CardTitle,
 } from "@/components/ui/card";
 
+
+
 export default function WishlistPage() {
+
+  const [wishlist, setWishlist] = useState([
+    {title: "Memórias Póstumas de Brás Cubas", author: "Machado de Assis"},
+    { title: "Vidas Secas", author: "Graciliano Ramos" },
+    { title: "Vidas Secas", author: "Graciliano Ramos" },
+  ]);
+
+  const removeFromWishlist = (book) => {
+    setWishlist(wishlist.filter(item => item !== book));
+  }
+
+  
   return (
     <>
       <HeaderBar />
@@ -20,18 +36,13 @@ export default function WishlistPage() {
             </CardDescription>
           </CardHeader>
           <CardContent className="flex flex-col gap-4 py-4">
-            <div>
-              <p className="text-sm font-medium leading-none">Memórias Póstumas de Brás Cubas</p>
-              <p className="text-sm text-muted-foreground">Machado de Assis</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Vidas Secas</p>
-              <p className="text-sm text-muted-foreground">Graciliano Ramos</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">São Bernardo</p>
-              <p className="text-sm text-muted-foreground">Graciliano Ramos</p>
-            </div>
+          {wishlist.map((book, index) => (
+    <div key={index}>
+      <p className="text-sm font-medium leading-none">{book.title}</p>
+      <p className="text-sm text-muted-foreground">{book.author}</p>
+      <button onClick={() => removeFromWishlist(book)}>Remover da lista</button>
+    </div>
+        ))}
           </CardContent>
         </Card>
       </main>
