@@ -10,6 +10,9 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
+import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog";
+import { DialogHeader } from "@/components/ui/dialog";
+import SeeUser from "./seeuser";
 
 export const columns = [
   {
@@ -48,7 +51,7 @@ export const columns = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Opções</DropdownMenuLabel>
-            <DropdownMenuItem>Ver perfil completo</DropdownMenuItem>
+            <DropdownMenuItem><SeeUser/></DropdownMenuItem>
             <DropdownMenuItem>Ver empréstimos</DropdownMenuItem>
             <DropdownMenuItem>Checar pendências</DropdownMenuItem>
             <DropdownMenuSeparator />
