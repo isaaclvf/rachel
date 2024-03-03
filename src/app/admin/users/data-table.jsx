@@ -24,7 +24,11 @@ import {
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { PlusCircledIcon } from "@radix-ui/react-icons";
+import { 
+  PlusCircledIcon,
+  ColumnsIcon
+} from "@radix-ui/react-icons";
+
 import {
   Dialog,
   DialogContent,
@@ -74,7 +78,8 @@ export function DataTable({ columns, data }) {
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
             <Button variant="outline" className="ml-auto bg-[#F5F5F5] w-1/2">
-              Colunas
+              <ColumnsIcon className="mr-1 h-4 w-4"/>
+              <p className="hidden md:inline">Colunas</p>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
@@ -102,8 +107,8 @@ export function DataTable({ columns, data }) {
         <Dialog>
           <DialogTrigger asChild>
             <Button variant="outline" className="ml-auto bg-[#F5F5F5] w-1/2">
-              <PlusCircledIcon className="mr-2 h-4 w-4" /> Cadastrar novo
-              usuário
+              <PlusCircledIcon className="mr-1 h-4 w-4" /> 
+              <p className="hidden md:inline">Cadastrar usuário</p>
             </Button>
           </DialogTrigger>
           <DialogContent className="flex h-4/5 w-3/4 flex-col overflow-scroll">
@@ -128,9 +133,18 @@ export function DataTable({ columns, data }) {
                       className="h-8 w-full rounded-md border border-input p-1"
                     />
                   </li>
+                  <li>
+                    <label for="avatar">Nome:</label>
+                    <input
+                      type="file"
+                      id="avatar"
+                      name="avatar"
+                      className="h-8 w-full rounded-md border border-input p-1 text-sm"
+                    />
+                  </li>
                   <span className="mt-2 flex gap-2">
                     <li className="flex w-full flex-col">
-                      <label for="birthdate">Data de nascimento:</label>
+                      <label for="birthdate">Nascimento:</label>
                       <input
                         type="date"
                         id="birthdate"
@@ -168,29 +182,29 @@ export function DataTable({ columns, data }) {
                 </legend>
                 <ul>
                   <li>
-                    <label for="name">Matrícula:</label>
+                    <label for="tuition">Matrícula:</label>
                     <input
-                      type="text"
-                      id="name"
-                      name="name"
+                      type="number"
+                      id="tuition"
+                      name="tuition"
                       className="h-8 w-full rounded-md border border-input p-1"
                     />
                   </li>
                   <li className="mt-2">
-                    <label for="birthdate">Senha:</label>
+                    <label for="password">Senha:</label>
                     <input
                       type="password"
-                      id="birthdate"
-                      name="birthdate"
+                      id="password"
+                      name="password"
                       className="h-8 w-full rounded-md border border-input p-1"
                     />
                   </li>
                   <li className="mt-2">
-                    <label for="birthdate">Confirmação de senha:</label>
+                    <label for="password-confirmation">Confirmação de senha:</label>
                     <input
                       type="password"
-                      id="birthdate"
-                      name="birthdate"
+                      id="password-confirmation"
+                      name="password-confirmation"
                       className="h-8 w-full rounded-md border border-input p-1"
                     />
                   </li>
