@@ -2,6 +2,7 @@
 
 import HeaderBar from "@/components/header-bar";
 import WishlistComponet from "./wishlist";
+import Footer from "@/components/footer";
 
 export default function WishlistPage() {
 
@@ -11,6 +12,7 @@ export default function WishlistPage() {
       <main className="flex min-h-screen flex-col items-center gap-4 py-24">
         <WishlistComponet></WishlistComponet>
       </main>
+      <Footer/>
     </>
   );
 }
