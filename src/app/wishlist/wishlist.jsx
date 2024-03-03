@@ -31,7 +31,7 @@ export default function WishlistComponet() {
           <CardHeader className="border-b-[1px] py-4">
             <CardTitle className="font-serif">Lista de desejos</CardTitle>
             <CardDescription className="text-black">
-              Livros que você salvou para ler mais tarde
+              Livros salvos para ler mais tarde
             </CardDescription>
           </CardHeader>
         </Link>
