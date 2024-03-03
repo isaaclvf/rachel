@@ -2,7 +2,6 @@ import AdminHeaderBar from "@/components/admin-header-bar";
 import { currentLoans } from "@/data/data";
 import { DataTable } from "./data-table";
 import { columns } from "./columns";
-import { Toaster } from "@/components/ui/toaster";
 
 export const metadata = {
   title: "Empréstimos - Rachel",
