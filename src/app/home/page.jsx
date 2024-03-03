@@ -5,6 +5,8 @@ import HeaderBar from "@/components/header-bar";
 import LoansTable from "@/components/loans-table";
 
 import { catSrc } from "@/data/data";
+import Footer from "@/components/footer";
+
 
 export default function HomePage() {
   return (
@@ -25,6 +27,7 @@ export default function HomePage() {
         </Alert>
         <LoansTable />
       </main>
+      <Footer></Footer>
     </>
   );
 }

@@ -2,6 +2,7 @@ import HeaderBar from "@/components/header-bar";
 import { books } from "@/data/data";
 import { columns } from "./columns";
 import { DataTable } from "./data-table";
+import Footer from "@/components/footer";
 
 export default function SearchPage() {
   return (
@@ -10,6 +11,7 @@ export default function SearchPage() {
       <main className="container mx-auto py-10">
         <DataTable columns={columns} data={books} />
       </main>
+      <Footer/>
     </>
   );
 }

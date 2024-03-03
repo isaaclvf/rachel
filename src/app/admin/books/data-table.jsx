@@ -25,6 +25,11 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 
+import { 
+  PlusCircledIcon,
+  ColumnsIcon
+} from "@radix-ui/react-icons";
+
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -53,8 +58,8 @@ export function DataTable({ columns, data }) {
   });
 
   return (
-    <div className="mx-auto my-0 max-w-[80ch] ">
-      <div className="flex items-center py-4 ">
+    <div className="mx-auto my-0 w-full max-w-[120ch]">
+      <div className="flex items-center py-4 gap-2">
         <Input
           placeholder="Filtre por título..."
           value={table.getColumn("title")?.getFilterValue() ?? ""}
@@ -65,8 +70,9 @@ export function DataTable({ columns, data }) {
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <Button variant="outline" className="ml-auto bg-[#F5F5F5]">
-              Colunas
+          <Button variant="outline" className="ml-auto bg-[#F5F5F5] w-1/2">
+              <ColumnsIcon className="mr-1 h-4 w-4"/>
+              <p className="hidden md:inline">Colunas</p>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
@@ -91,7 +97,7 @@ export function DataTable({ columns, data }) {
               })}
           </DropdownMenuContent>
         </DropdownMenu>
-        <AddBook></AddBook>
+        <AddBook/>
       </div>
       <div className="rounded-md border bg-[#F5F5F5] ">
         <Table>
