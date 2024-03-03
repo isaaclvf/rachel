@@ -28,7 +28,7 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogFooter
+  DialogFooter,
 } from "@/components/ui/dialog";
 
 export default function ProfilePage() {
@@ -36,13 +36,13 @@ export default function ProfilePage() {
     <>
       <HeaderBar />
       <main className="bg-[#F5F5F5]">
-        <div className="flex w-screen translate-y-8 justify-center">
+        <div className="flex w-full translate-y-8 justify-center">
           <Avatar className="h-36 w-36  border-4 border-white ">
             <AvatarImage className="" src={catSrc} />
           </Avatar>
         </div>
 
-        <div className="h-screen  grid-flow-col-dense justify-center rounded-t-[50px] bg-[#113535]">
+        <div className="h-screen  grid-flow-col-dense  justify-center rounded-t-[50px] bg-[#113535]">
           <div className="mb-0 flex flex-row justify-center gap-2">
             <h1 className="py-12 text-white"> Username </h1>
 
@@ -50,7 +50,7 @@ export default function ProfilePage() {
               <DialogTrigger asChild>
                 <Pencil1Icon className="my-12 h-6 w-6 text-white"></Pencil1Icon>
               </DialogTrigger>
-              <DialogContent className="sm:max-w-[425px] bg-[#F5F5F5]">
+              <DialogContent className="bg-[#F5F5F5] sm:max-w-[425px]">
                 <DialogHeader>
                   <DialogTitle>Edite o Perfil</DialogTitle>
                   <DialogDescription>
@@ -59,9 +59,7 @@ export default function ProfilePage() {
                 </DialogHeader>
                 <div className="grid gap-4 py-4">
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">
-                      Rua
-                    </Label>
+                    <Label className="text-right">Rua</Label>
                     <Input
                       id="rua"
                       type="text"
@@ -81,9 +79,7 @@ export default function ProfilePage() {
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">
-                      Bairro
-                    </Label>
+                    <Label className="text-right">Bairro</Label>
                     <Input
                       id="bairro"
                       type="text"
@@ -92,9 +88,7 @@ export default function ProfilePage() {
                     />
                   </div>
                   <div className="grid grid-cols-4 items-center gap-4">
-                    <Label className="text-right">
-                      Cidade
-                    </Label>
+                    <Label className="text-right">Cidade</Label>
                     <Input
                       id="Cidade"
                       type="text"
@@ -159,72 +153,75 @@ export default function ProfilePage() {
                   </div>
                 </div>
                 <DialogFooter>
-                  <Button type="submit" className="bg-[#113535]">Salvar</Button>
+                  <Button type="submit" className="bg-[#113535]">
+                    Salvar
+                  </Button>
                 </DialogFooter>
               </DialogContent>
             </Dialog>
           </div>
 
-          <div className=" px-5 ">
-          <Card className="bg-[#F5F5F5]"> 
-          <CardHeader className="border-b-[1px] py-4">
-            <CardTitle className="font-serif">Informações</CardTitle>
-          </CardHeader>
-          <CardContent className="flex flex-row flex-wrap justify-between gap-4 py-4">
+          <div className="  mx-auto my-0 max-w-[80ch] px-4">
             <div>
-              <p className="text-sm font-medium leading-none">Rua</p>
-              <p className="text-sm text-muted-foreground">Rua</p>
+              <Card className="bg-[#FFF9C7]">
+                <CardHeader className="border-b-[1px] py-4">
+                  <CardTitle className="font-serif">Informações</CardTitle>
+                </CardHeader>
+                <CardContent className="flex flex-row flex-wrap justify-between gap-4 py-4">
+                  <div>
+                    <p className="text-sm font-medium leading-none">Rua</p>
+                    <p className="text-sm text-muted-foreground">Rua</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">Número</p>
+                    <p className="text-sm text-muted-foreground">Número</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">Bairro</p>
+                    <p className="text-sm text-muted-foreground">Bairro</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">Cidade</p>
+                    <p className="text-sm text-muted-foreground">Cidade</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">Telefone</p>
+                    <p className="text-sm text-muted-foreground">Telefone</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">UF</p>
+                    <p className="text-sm text-muted-foreground">UF</p>
+                  </div>
+                  <div>
+                    <p className="text-sm font-medium leading-none">
+                      Nascimento
+                    </p>
+                    <p className="text-sm text-muted-foreground">Nascimento</p>
+                  </div>
+                </CardContent>
+              </Card>
             </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Número</p>
-              <p className="text-sm text-muted-foreground">Número</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Bairro</p>
-              <p className="text-sm text-muted-foreground">Bairro</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Cidade</p>
-              <p className="text-sm text-muted-foreground">Cidade</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Telefone</p>
-              <p className="text-sm text-muted-foreground">Telefone</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">UF</p>
-              <p className="text-sm text-muted-foreground">UF</p>
-            </div>
-            <div>
-              <p className="text-sm font-medium leading-none">Nascimento</p>
-              <p className="text-sm text-muted-foreground">Nascimento</p>
-            </div>
-            
-          </CardContent>
-        </Card>
-          </div>
 
-          <div className=" px-5 ">
-            <Accordion type="single" collapsible className="w-full">
-              <AccordionItem value="item-2">
-                <AccordionTrigger className="border-b-white text-white">
-                  Reservas
-                </AccordionTrigger>
-                <AccordionContent className="text-white">
-                  <Reservation />
-                </AccordionContent>
-              </AccordionItem>
-              <AccordionItem value="item-3">
-                <AccordionTrigger className="border-b-white text-white">
-                  Listas de desejos
-                </AccordionTrigger>
-                <AccordionContent className="text-white">
-                  <Link href="/wishlist">
+            <div>
+              <Accordion type="single" collapsible className="w-full">
+                <AccordionItem value="item-2">
+                  <AccordionTrigger className="border-b-white text-white">
+                    Reservas
+                  </AccordionTrigger>
+                  <AccordionContent className="text-white">
+                    <Reservation />
+                  </AccordionContent>
+                </AccordionItem>
+                <AccordionItem value="item-3">
+                  <AccordionTrigger className="border-b-white text-white">
+                    Listas de desejos
+                  </AccordionTrigger>
+                  <AccordionContent className="text-white">
                     <WishlistComponet />
-                  </Link>
-                </AccordionContent>
-              </AccordionItem>
-            </Accordion>
+                  </AccordionContent>
+                </AccordionItem>
+              </Accordion>
+            </div>
           </div>
         </div>
       </main>

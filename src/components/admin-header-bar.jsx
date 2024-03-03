@@ -36,7 +36,10 @@ export default function AdminHeaderBar() {
               <Link href="/admin/users">Usuários</Link>
             </div>
             <SheetFooter>
+              <Link href="/admin/login">
               <Button className="bg-[#FF2E2E] hover:bg-red-800 ">Sair</Button>
+              </Link>
+              
             </SheetFooter>
           </SheetContent>
         </Sheet>

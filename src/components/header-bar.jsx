@@ -19,7 +19,7 @@ import {
 
 export default function HeaderBar() {
   return (
-    <header className="flex h-16 items-center justify-between border-b-[1px] px-4 bg-[#A0DFC7]">
+    <header className="flex h-16 items-center justify-between border-b-[1px] bg-[#A0DFC7] px-4">
       <Link href="/home">
         <img src="/logoNormal.svg" alt="" />
       </Link>
@@ -29,7 +29,7 @@ export default function HeaderBar() {
         </Link>
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-            <BellIcon className="hover:cursor-pointer text-[#113535]"></BellIcon>
+            <BellIcon className="text-[#113535] hover:cursor-pointer"></BellIcon>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <div className="p-4">
@@ -41,11 +41,11 @@ export default function HeaderBar() {
           <SheetTrigger>
             <HamburgerMenuIcon className="h-6 w-6 text-[#113535]"></HamburgerMenuIcon>
           </SheetTrigger>
-          <SheetContent className="flex flex-col justify-between bg-[#113535] text-white border-0 ">
+          <SheetContent className="flex flex-col justify-between border-0 bg-[#113535] text-white ">
             <div className="flex flex-col gap-4">
               <SheetHeader>
-                <SheetTitle className=" text-white" >Navegação</SheetTitle>
-                <SheetDescription className="text-white" >
+                <SheetTitle className=" text-white">Navegação</SheetTitle>
+                <SheetDescription className="text-white">
                   Explore diferentes áreas da platafoma.
                 </SheetDescription>
               </SheetHeader>
@@ -56,7 +56,9 @@ export default function HeaderBar() {
               <Link href="/about">Sobre</Link>
             </div>
             <SheetFooter>
-              <Button className="bg-[#FF2E2E] hover:bg-red-800">Sair</Button>
+              <Link href="/login">
+                <Button className="bg-[#FF2E2E] hover:bg-red-800">Sair</Button>
+              </Link>
             </SheetFooter>
           </SheetContent>
         </Sheet>

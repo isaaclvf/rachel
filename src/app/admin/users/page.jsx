@@ -13,11 +13,14 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
+import AdminHeaderBar from "@/components/admin-header-bar";
+
+
 
 export default function UserPage() {
   return (
     <>
-      <HeaderBar />
+      <AdminHeaderBar></AdminHeaderBar>
       <main className="container mx-auto flex flex-col items-center justify-center py-10">
         <DataTable columns={columns} data={users} />
       </main>

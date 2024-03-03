@@ -1,30 +1,34 @@
 import {
-    Card,
-    CardContent,
-    CardDescription,
-    CardHeader,
-    CardTitle,
-  } from "@/components/ui/card";
-  import { CheckCircledIcon, CrossCircledIcon } from "@radix-ui/react-icons";
-  import {
-    Dialog,
-    DialogContent,
-    DialogDescription,
-    DialogHeader,
-    DialogTitle,
-    DialogTrigger,
-  } from "@/components/ui/dialog";
+  Card,
+  CardContent,
+  CardDescription,
+  CardHeader,
+  CardTitle,
+} from "@/components/ui/card";
+import { CheckCircledIcon, CrossCircledIcon } from "@radix-ui/react-icons";
+import {
+  Dialog,
+  DialogContent,
+  DialogDescription,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from "@/components/ui/dialog";
+import Link from "next/link";
 
 export default function Reservation() {
   return (
     <>
       <Card className="bg-[#F5F5F5]">
-        <CardHeader className="border-b-[1px] py-4">
-          <CardTitle>Reservas</CardTitle>
-          <CardDescription className="text-black">
-            Livros que você reservou na biblioteca
-          </CardDescription>
-        </CardHeader>
+        <Link href="/reservations">
+          <CardHeader className="border-b-[1px] py-4">
+            <CardTitle>Reservas</CardTitle>
+            <CardDescription className="text-black">
+              Livros que você reservou na biblioteca
+            </CardDescription>
+          </CardHeader>
+        </Link>
+
         <CardContent className="flex flex-col gap-4 py-4">
           <Dialog>
             <DialogTrigger>
