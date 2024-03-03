@@ -51,9 +51,7 @@ export const columns = [
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             <DropdownMenuLabel>Opções</DropdownMenuLabel>
-            <DropdownMenuItem><SeeUser/></DropdownMenuItem>
-            <DropdownMenuItem>Ver empréstimos</DropdownMenuItem>
-            <DropdownMenuItem>Checar pendências</DropdownMenuItem>
+            <DropdownMenuItem>Ver perfil</DropdownMenuItem>
             <DropdownMenuSeparator />
             <DropdownMenuItem>Editar cadastro</DropdownMenuItem>
             <DropdownMenuItem className="text-red-600">Excluir usuário</DropdownMenuItem>
