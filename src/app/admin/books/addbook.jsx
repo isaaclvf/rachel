@@ -15,9 +15,10 @@ export default function AddBook() {
     <>
       <Dialog>
         <DialogTrigger asChild>
-          <Button variant="outline" className=" ml-auto bg-[#F5F5F5]">
-            <PlusCircledIcon className="mr-2 h-4 w-4" /> Cadastrar livro
-          </Button>
+        <Button variant="outline" className="ml-auto bg-[#F5F5F5] w-1/2">
+              <PlusCircledIcon className="mr-1 h-4 w-4" /> 
+              <p className="hidden md:inline">Adicionar livro</p>
+            </Button>
         </DialogTrigger>
         <DialogContent className="flex h-4/5 w-3/4 flex-col overflow-scroll">
           <DialogHeader>
@@ -27,7 +28,7 @@ export default function AddBook() {
             <DialogDescription>Preencha todos os campos.</DialogDescription>
           </DialogHeader>
           <form method="post">
-            <fieldset>
+            <fieldset >
               <legend legend className="font-serif text-lg font-bold">
                 Dados do livro
               </legend>

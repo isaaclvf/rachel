@@ -133,8 +133,8 @@ export function DataTable({ columns, data }) {
                       className="h-8 w-full rounded-md border border-input p-1"
                     />
                   </li>
-                  <li>
-                    <label for="avatar">Nome:</label>
+                  <li className="mt-2">
+                    <label for="avatar">Imagem de perfil:</label>
                     <input
                       type="file"
                       id="avatar"
