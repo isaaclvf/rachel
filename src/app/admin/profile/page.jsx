@@ -1,4 +1,3 @@
-import HeaderBar from "@/components/header-bar";
 import {
   Accordion,
   AccordionContent,
@@ -8,20 +7,13 @@ import {
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { catSrc } from "@/data/data";
 import { Pencil1Icon } from "@radix-ui/react-icons";
-import Link from "next/link";
-import Reservation from "../reservations/reservations";
-import WishlistComponet from "../wishlist/wishlist";
+import Reservation from "@/components/reservation";
+import Wishlist from "@/components/wishlist";
 import { Button } from "@/components/ui/button";
 import { Label } from "@/components/ui/label";
 import { Input } from "@/components/ui/input";
 import Footer from "@/components/footer";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import {
   Dialog,
   DialogContent,
@@ -31,11 +23,12 @@ import {
   DialogTrigger,
   DialogFooter,
 } from "@/components/ui/dialog";
+import AdminHeaderBar from "@/components/admin-header-bar";
 
 export default function ProfilePage() {
   return (
     <>
-      <HeaderBar />
+      <AdminHeaderBar />
       <main className="bg-[#F5F5F5]">
         <div className="flex w-full translate-y-8 justify-center">
           <Avatar className="h-36 w-36  border-4 border-white ">
@@ -218,7 +211,7 @@ export default function ProfilePage() {
                     Listas de desejos
                   </AccordionTrigger>
                   <AccordionContent className="text-black">
-                    <WishlistComponet />
+                    <Wishlist />
                   </AccordionContent>
                 </AccordionItem>
               </Accordion>
@@ -226,7 +219,7 @@ export default function ProfilePage() {
           </div>
         </div>
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

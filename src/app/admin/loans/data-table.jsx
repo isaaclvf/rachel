@@ -8,7 +8,6 @@ import {
   getSortedRowModel,
   getFilteredRowModel,
 } from "@tanstack/react-table";
-
 import {
   Table,
   TableBody,
@@ -17,7 +16,6 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
 import {
   Dialog,
   DialogContent,
@@ -26,10 +24,8 @@ import {
   DialogTitle,
   DialogTrigger,
 } from "@/components/ui/dialog";
-
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
-
 import { useState } from "react";
 
 export function DataTable({ columns, data }) {

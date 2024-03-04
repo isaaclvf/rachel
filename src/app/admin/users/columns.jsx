@@ -10,9 +10,6 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-import { Dialog, DialogContent, DialogTrigger } from "@radix-ui/react-dialog";
-import { DialogHeader } from "@/components/ui/dialog";
-import SeeUser from "./seeuser";
 
 export const columns = [
   {

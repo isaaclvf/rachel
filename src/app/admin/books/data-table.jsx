@@ -8,7 +8,6 @@ import {
   getSortedRowModel,
   useReactTable,
 } from "@tanstack/react-table";
-
 import {
   Table,
   TableBody,
@@ -17,19 +16,13 @@ import {
   TableHeader,
   TableRow,
 } from "@/components/ui/table";
-
 import {
   DropdownMenu,
   DropdownMenuCheckboxItem,
   DropdownMenuContent,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
-import { 
-  PlusCircledIcon,
-  ColumnsIcon
-} from "@radix-ui/react-icons";
-
+import { ColumnsIcon } from "@radix-ui/react-icons";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
@@ -59,7 +52,7 @@ export function DataTable({ columns, data }) {
 
   return (
     <div className="mx-auto my-0 w-full max-w-[120ch]">
-      <div className="flex items-center py-4 gap-2">
+      <div className="flex items-center gap-2 py-4">
         <Input
           placeholder="Filtre por título..."
           value={table.getColumn("title")?.getFilterValue() ?? ""}
@@ -70,17 +63,15 @@ export function DataTable({ columns, data }) {
         />
         <DropdownMenu>
           <DropdownMenuTrigger asChild>
-          <Button variant="outline" className="ml-auto bg-[#F5F5F5] w-1/2">
-              <ColumnsIcon className="mr-1 h-4 w-4"/>
+            <Button variant="outline" className="ml-auto w-1/2 bg-[#F5F5F5]">
+              <ColumnsIcon className="mr-1 h-4 w-4" />
               <p className="hidden md:inline">Colunas</p>
             </Button>
           </DropdownMenuTrigger>
           <DropdownMenuContent align="end">
             {table
               .getAllColumns()
-              .filter(
-                (column) => column.getCanHide()
-              )
+              .filter((column) => column.getCanHide())
               .map((column) => {
                 return (
                   <DropdownMenuCheckboxItem
@@ -93,11 +84,11 @@ export function DataTable({ columns, data }) {
                   >
                     {column.id}
                   </DropdownMenuCheckboxItem>
-                )
+                );
               })}
           </DropdownMenuContent>
         </DropdownMenu>
-        <AddBook/>
+        <AddBook />
       </div>
       <div className="rounded-md border bg-[#F5F5F5] ">
         <Table>

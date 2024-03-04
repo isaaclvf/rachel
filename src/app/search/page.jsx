@@ -11,7 +11,7 @@ export default function SearchPage() {
       <main className="container mx-auto py-10">
         <DataTable columns={columns} data={books} />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

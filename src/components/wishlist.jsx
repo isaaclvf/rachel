@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-
 import { Button } from "@/components/ui/button";
 import { CrossCircledIcon } from "@radix-ui/react-icons";
 import {
@@ -13,7 +12,7 @@ import {
 } from "@/components/ui/card";
 import Link from "next/link";
 
-export default function WishlistComponet() {
+export default function Wishlist() {
   const [wishlist, setWishlist] = useState([
     { title: "Memórias Póstumas de Brás Cubas", author: "Machado de Assis" },
     { title: "Vidas Secas", author: "Graciliano Ramos" },

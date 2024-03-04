@@ -33,7 +33,6 @@ import {
   Dialog,
   DialogContent,
   DialogDescription,
-  DialogFooter,
   DialogHeader,
   DialogTitle,
   DialogTrigger,
@@ -41,11 +40,24 @@ import {
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { useState } from "react";
+import { validateCPF } from "@/lib/utils";
 
 export function DataTable({ columns, data }) {
   const [sorting, setSorting] = useState([]);
   const [columnFilters, setColumnFilters] = useState([]);
   const [columnVisibility, setColumnVisibility] = useState({});
+
+  const [cpf, setCPF] = useState("");
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    console.log({
+      validCPF: validateCPF(cpf),
+    });
+
+    setCPF("");
+  }
 
   const table = useReactTable({
     data,
@@ -118,7 +130,7 @@ export function DataTable({ columns, data }) {
               </DialogTitle>
               <DialogDescription>Preencha todos os campos.</DialogDescription>
             </DialogHeader>
-            <form method="post">
+            <form method="post" onSubmit={handleSubmit}>
               <fieldset>
                 <legend legend className="font-serif text-lg font-bold">
                   Dados Pessoais
@@ -168,10 +180,12 @@ export function DataTable({ columns, data }) {
                   <li className="mt-2">
                     <label for="cpf">CPF:</label>
                     <input
-                      type="number"
+                      type="text"
                       id="cpf"
                       name="cpf"
                       className="h-8 w-full rounded-md border border-input p-1"
+                      value={cpf}
+                      onChange={(e) => setCPF(e.target.value)}
                     />
                   </li>
                 </ul>

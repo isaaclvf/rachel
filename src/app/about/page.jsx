@@ -5,8 +5,8 @@ export default function AboutPage() {
     <>
       <HeaderBar />
       <main className="px-5 py-5 lg:px-10">
-        <div className="mb-3 lg:mb-10 flex flex-col lg:flex-row">
-          <div className="flex w-full lg:w-2/4 flex-wrap items-center justify-center gap-3 p-4">
+        <div className="mb-3 flex flex-col lg:mb-10 lg:flex-row">
+          <div className="flex w-full flex-wrap items-center justify-center gap-3 p-4 lg:w-2/4">
             <p className="my-3 text-center text-2xl lg:text-4xl">
               <b>Rachel</b> é um sistema desenvolvido para bibliotecas,
               oferecendo uma variedade de recursos e funcionalidades para
@@ -14,18 +14,18 @@ export default function AboutPage() {
               seus usuários.
             </p>
           </div>
-          <div className="flex w-full lg:w-2/4 flex-wrap justify-center gap-3 ">
-            <img className="rounded-lg w-4/5" src="imagemLogo.jpg" />
+          <div className="flex w-full flex-wrap justify-center gap-3 lg:w-2/4 ">
+            <img className="w-4/5 rounded-lg" src="imagemLogo.jpg" />
           </div>
         </div>
-        <div className="mb-3 lg:mb-10 flex flex-col-reverse lg:flex-row">
-          <div className="flex w-full lg:w-2/4 flex-wrap justify-center gap-3 sm:w-full">
+        <div className="mb-3 flex flex-col-reverse lg:mb-10 lg:flex-row">
+          <div className="flex w-full flex-wrap justify-center gap-3 sm:w-full lg:w-2/4">
             <img
-              className="rounded-lg w-4/5"
+              className="w-4/5 rounded-lg"
               src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/f9/Adonias_FIlho%2C_Rachel_de_Queiroz%2C_Gilberto_Freyre.jpg/640px-Adonias_FIlho%2C_Rachel_de_Queiroz%2C_Gilberto_Freyre.jpg"
             />
           </div>
-          <div className="flex w-full lg:w-2/4 flex-wrap items-center justify-center gap-3 p-4">
+          <div className="flex w-full flex-wrap items-center justify-center gap-3 p-4 lg:w-2/4">
             <p className="my-3 text-center text-2xl lg:text-4xl">
               A identidade do projeto foi inspirada pela grande{" "}
               <b>Rachel de Queiroz</b>, autora de O Quinze e diversos outros
@@ -34,18 +34,18 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-        <div className="mb-3 lg:mb-10 flex flex-col lg:flex-row">
-          <div className="flex w-full lg:w-2/4 flex-wrap items-center justify-center gap-3 p-4">
+        <div className="mb-3 flex flex-col lg:mb-10 lg:flex-row">
+          <div className="flex w-full flex-wrap items-center justify-center gap-3 p-4 lg:w-2/4">
             <p className="my-3 text-center text-2xl lg:text-4xl">
               Esse projeto foi desenvolvido por Antônio Rafael Cunha, João Isaac
               Alves, Leonardo Pereira e Riquelme Jatay.{" "}
               <b>Que tal seguir a equipe em suas redes socias? :)</b>
             </p>
           </div>
-          <div className="flex w-full lg:w-2/4 flex-wrap justify-center gap-3">
+          <div className="flex w-full flex-wrap justify-center gap-3 lg:w-2/4">
             <div
               id="card"
-              className="flex items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex w-4/5 items-center rounded-lg border border-black p-3"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -68,7 +68,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex w-4/5 items-center rounded-lg border border-black p-3"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -91,7 +91,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex w-4/5 items-center rounded-lg border border-black p-3"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"
@@ -114,7 +114,7 @@ export default function AboutPage() {
             </div>
             <div
               id="card"
-              className="flex items-center rounded-lg border border-black p-3 w-4/5"
+              className="flex w-4/5 items-center rounded-lg border border-black p-3"
             >
               <img
                 className="mr-2 max-w-16 rounded-lg"

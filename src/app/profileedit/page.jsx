@@ -10,35 +10,26 @@ import {
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 
-
 export default function ProfileeditPage(params) {
   return (
     <>
       <HeaderBar />
-      <main className="flex min-h-screen flex-col items-center justify-between p-5 bg-[#F5F5F5]" >
+      <main className="flex min-h-screen flex-col items-center justify-between bg-[#F5F5F5] p-5">
         <Card className="bg-[#FFF9C7]">
           <CardHeader>
             <CardTitle>Dados Pessoais</CardTitle>
             <CardDescription className="text-black">
-            Confira seus dados cadastrais e altere se necessário.
+              Confira seus dados cadastrais e altere se necessário.
             </CardDescription>
           </CardHeader>
           <form>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Rua</Label>
-              <Input
-                type="text"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Rua</Label>
+              <Input type="text" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Número</Label>
-              <Input
-                type="number"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Número</Label>
+              <Input type="number" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="password">Matrícula</Label>
@@ -50,60 +41,32 @@ export default function ProfileeditPage(params) {
               />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Bairro</Label>
-              <Input
-                type="text"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Bairro</Label>
+              <Input type="text" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Complemento</Label>
-              <Input
-                type="text"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Complemento</Label>
+              <Input type="text" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Cidade</Label>
-              <Input
-                type="text"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Cidade</Label>
+              <Input type="text" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >CEP</Label>
-              <Input
-                type="number"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>CEP</Label>
+              <Input type="number" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Telefone</Label>
-              <Input
-                type="tel"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Telefone</Label>
+              <Input type="tel" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >UF</Label>
-              <Input
-                type="text"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>UF</Label>
+              <Input type="text" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
-              <Label >Nascimento</Label>
-              <Input
-                type="date"
-                autoComplete="off"
-                className="bg-white"
-              />
+              <Label>Nascimento</Label>
+              <Input type="date" autoComplete="off" className="bg-white" />
             </CardContent>
             <CardContent className="grid w-full max-w-sm items-center gap-1.5">
               <Label htmlFor="password">E-mail</Label>

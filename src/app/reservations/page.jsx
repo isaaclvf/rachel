@@ -1,6 +1,6 @@
 import HeaderBar from "@/components/header-bar";
 
-import Reservation from "./reservations";
+import Reservation from "@/components/reservation";
 import Footer from "@/components/footer";
 
 export default function ReservationsPage() {
@@ -8,9 +8,9 @@ export default function ReservationsPage() {
     <>
       <HeaderBar />
       <main className="flex min-h-screen flex-col items-center gap-4 py-24">
-        <Reservation/>
+        <Reservation />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }

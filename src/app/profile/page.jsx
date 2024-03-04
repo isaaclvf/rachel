@@ -8,17 +8,13 @@ import {
 import { Avatar, AvatarImage } from "@/components/ui/avatar";
 import { catSrc } from "@/data/data";
 import { Pencil1Icon } from "@radix-ui/react-icons";
-import Link from "next/link";
-import Reservation from "../reservations/reservations";
-import WishlistComponet from "../wishlist/wishlist";
+import Reservation from "../../components/reservation";
+import WishlistComponet from "../../components/wishlist";
 import { Button } from "@/components/ui/button";
-import { Label } from "@/components/ui/label";
-import { Input } from "@/components/ui/input";
 import Footer from "@/components/footer";
 import {
   Card,
   CardContent,
-  CardDescription,
   CardHeader,
   CardTitle,
 } from "@/components/ui/card";
@@ -29,7 +25,6 @@ import {
   DialogHeader,
   DialogTitle,
   DialogTrigger,
-  DialogFooter,
 } from "@/components/ui/dialog";
 
 export default function ProfilePage() {
@@ -37,7 +32,7 @@ export default function ProfilePage() {
     <>
       <HeaderBar />
       <main className="bg-[#F5F5F5]">
-        <img className="absolute z-0" src="/Frame.png" alt="Imagem de fundo" />
+        <img className="absolute z-0" src="/frame.png" alt="Imagem de fundo" />
         <div className="relative z-10 flex w-full translate-y-8 justify-center">
           <Avatar className="h-36 w-36  border-4 border-white ">
             <AvatarImage className="" src={catSrc} />

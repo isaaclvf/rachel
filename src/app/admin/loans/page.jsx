@@ -15,7 +15,7 @@ export default function LoansAdminPage() {
       <main className="container mx-auto py-10">
         <DataTable columns={columns} data={currentLoans} />
       </main>
-      <Footer/>
+      <Footer />
     </>
   );
 }
