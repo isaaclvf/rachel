@@ -25,20 +25,20 @@ No VS Code, recomendo instalar as extensões Prettier e Tailwind.
 
 ## Motivação do Projeto e Funcionalidades Principais
 
-- Solução Geral:
+### Solução Geral
   
 Criar uma plataforma atual para organização de empréstimos de livros, uma Alternativa para o Meu Pergamum.
-- Funcionalidades:
+### Funcionalidades
 
 Como Usuário: Pesquisar livros no catálogo; Renovar os livros em sua posse; Adicionar livros à sua lista de desejos; Fazer reserva; Editar seu perfil.
 
 Como administrador: Realizar reservas; Adicionar usuários; Cadastrar livro; Averiguar Empréstimos;
 
-- Diferencial:
+### Diferencial
 
 Responsividade, facilidade de navegação e modernidade no design.
 
-- Publico Alvo:
+### Publico Alvo
 
 Bibliotecarios; Administradores da Biblioteca da UFCA; Comunidade Acadêmica da UFCA.
 
